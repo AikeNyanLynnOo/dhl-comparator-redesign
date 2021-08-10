@@ -1,33 +1,35 @@
 import React from "react";
 
-function Header() {
+function Header({countries,months}) {
   return (
-    <div>
-      <nav id="my-nav" class="uk-navbar-container uk-navbar uk-margin ">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li class="nav-brand uk-margin-medium-right">DHL</li>
-            <li>Global Trade Barometer</li>
-          </ul>
-        </div>
+    <React.Fragment>
+      <div className="nav-container">
+        <nav id="my-nav" className="uk-navbar-container uk-navbar uk-margin ">
+          <div className="uk-navbar-left">
+            <ul className="uk-navbar-nav">
+              <li className="nav-brand uk-margin-medium-right">DHL</li>
+              <li>Global Trade Barometer</li>
+            </ul>
+          </div>
 
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active">
-              <span uk-icon="social"></span>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="header">
-        <h2>GLOBAL TRADE</h2>
+          <div className="uk-navbar-right">
+            <ul className="uk-navbar-nav">
+              <li className="uk-active">
+                <span uk-icon="social"></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div className="header">
+        <h3>GLOBAL TRADE</h3>
         <h1>COUNTRY COMPARATOR</h1>
         <p>
           Select between 2 countries and the reporting period to compare trade
           indexes.
         </p>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
